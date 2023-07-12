@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FacultyMeets.RegisterPage"
+             Title="RegisterPage">
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <Label Text="Register" FontSize="24" HorizontalOptions="Center" Margin="0,0,0,20" />
+        <Entry Placeholder="Full Name" x:Name="FullNameEntry" />
+        <Entry Placeholder="Email" x:Name="EmailEntry" />
+        <Entry Placeholder="Password" x:Name="PasswordEntry" IsPassword="True" />
+        <Button Text="Register" Clicked="OnRegisterClicked" />
+        <Label Text="Already have an account?" HorizontalOptions="Center" Margin="0,20,0,0" />
+        <Button Text="Login" Clicked="OnLoginClicked" />
+    </StackLayout>
+</ContentPage>

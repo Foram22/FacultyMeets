@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WPwehFFxR8xFbzU37illNf7iAzP1xxO9hXBcHTbbsgZmRarK9k1XMGAb5TjNDli/eq/aUflODzLyIWP6UBThAw==",
+  "dgSpecHash": "F53QhZib9qom9kxLpNQUdPWajFBNljgqrGuhoptRRDLcdBeDSlNQ1JrZQu5nm/da5Zs3Kg8UtbdEkA65OOmhTA==",
   "success": true,
   "projectFilePath": "/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/FacultyMeets.csproj",
   "expectedPackageFiles": [
@@ -14,7 +14,7 @@
     "/Users/forampatel/.nuget/packages/microsoft.extensions.logging.debug/7.0.0/microsoft.extensions.logging.debug.7.0.0.nupkg.sha512",
     "/Users/forampatel/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
     "/Users/forampatel/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
-    "/Users/forampatel/.nuget/packages/microsoft.maui.graphics/7.0.86/microsoft.maui.graphics.7.0.86.nupkg.sha512",
+    "/Users/forampatel/.nuget/packages/microsoft.maui.graphics/7.0.92/microsoft.maui.graphics.7.0.92.nupkg.sha512",
     "/Users/forampatel/.nuget/packages/xamarin.android.glide/4.13.2.2/xamarin.android.glide.4.13.2.2.nupkg.sha512",
     "/Users/forampatel/.nuget/packages/xamarin.android.glide.annotations/4.13.2.2/xamarin.android.glide.annotations.4.13.2.2.nupkg.sha512",
     "/Users/forampatel/.nuget/packages/xamarin.android.glide.disklrucache/4.13.2.2/xamarin.android.glide.disklrucache.4.13.2.2.nupkg.sha512",

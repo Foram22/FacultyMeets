@@ -2,24 +2,22 @@
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
 
-	public MainPage()
-	{
-		InitializeComponent();
-	}
+    public MainPage()
+    {
+        InitializeComponent();
+    }
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
+    protected override async void OnAppearing()
+    {
+        base.OnAppearing();
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
+        // Wait for 3 seconds
+        await Task.Delay(3000);
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+        // Open another page
+        await Navigation.PushAsync(new LoginPage());
+    }
 }
 
 
