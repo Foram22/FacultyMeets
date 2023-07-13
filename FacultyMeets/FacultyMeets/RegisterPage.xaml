@@ -4,12 +4,22 @@
              x:Class="FacultyMeets.RegisterPage"
              Title="RegisterPage">
     <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-        <Label Text="Register" FontSize="24" HorizontalOptions="Center" Margin="0,0,0,20" />
-        <Entry Placeholder="Full Name" x:Name="FullNameEntry" />
-        <Entry Placeholder="Email" x:Name="EmailEntry" />
-        <Entry Placeholder="Password" x:Name="PasswordEntry" IsPassword="True" />
-        <Button Text="Register" Clicked="OnRegisterClicked" />
-        <Label Text="Already have an account?" HorizontalOptions="Center" Margin="0,20,0,0" />
-        <Button Text="Login" Clicked="OnLoginClicked" />
+        <Image Source="cambrian_logo.png" WidthRequest="150" HeightRequest="150"/>
+        <Label Text="Registration" FontSize="26" HorizontalOptions="Center" Margin="0,0,0,20" FontAttributes="Bold"/>
+        <Label Text="Name" TextColor="{x:DynamicResource color_red}"/>
+        <Entry Placeholder="Your Name" x:Name="FullNameEntry" Margin="0,0,0,20"/>
+        <Label Text="Email" TextColor="{x:DynamicResource color_red}" />
+        <Entry Placeholder="Your Email" x:Name="EmailEntry" Margin="0,0,0,20"/>
+        <Label Text="Password" TextColor="{x:DynamicResource color_red}" />
+        <Entry Placeholder="Password" x:Name="PasswordEntry" IsPassword="True" Margin="0,0,0,20"/>
+        <Button Text="Register" Clicked="OnRegisterClicked" BackgroundColor="{x:DynamicResource color_red}" TextColor="White"/>
+
+        <HorizontalStackLayout Margin="0,20,0,0">
+
+            <Label Text="Already have an account?" HorizontalOptions="Center" Margin="0,10,0,0"/>
+            <Button Text="Sign In" Clicked="OnLoginClicked" BackgroundColor="White" TextColor="{x:DynamicResource color_red}"/>
+
+        </HorizontalStackLayout>
+ 
     </StackLayout>
 </ContentPage>
