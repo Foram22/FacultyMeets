@@ -13,6 +13,8 @@ public partial class LoginPage : ContentPage
         // Perform login logic here
         string email = EmailEntry.Text;
         string password = PasswordEntry.Text;
+
+        await Navigation.PushAsync(new MainHomePage());
     }
 
     private async void OnRegisterClicked(object sender, EventArgs e)

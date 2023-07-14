@@ -54,9 +54,11 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\" />
 	  <None Remove="Resources\Images\college_icon_cambrian.png" />
+	  <None Remove="ModelClasses\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Resources\Images\" />
+	  <Folder Include="ModelClasses\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\Images\cambrian_logo.png" />

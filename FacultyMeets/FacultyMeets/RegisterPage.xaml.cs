@@ -17,7 +17,15 @@ public partial class RegisterPage : ContentPage
         // Validate input and create a new user account
         // You can use authentication services like Firebase Authentication or ASP.NET Identity
 
+        // Set the data
+        var user = new User();
+        user.Email = email;
+        user.Name = fullName;
+        user.Password = password;
+
         // Navigate to the home page after successful registration
+        var homePage = new HomePage();
+        homePage.Data = user;
         Navigation.PushAsync(new HomePage());
     }
 

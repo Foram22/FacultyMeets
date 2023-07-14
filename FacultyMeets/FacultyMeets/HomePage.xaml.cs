@@ -8,6 +8,8 @@ public partial class HomePage : ContentPage
         InitializeComponent();
     }
 
+    public User Data { get; set; }
+
     private void OnCheckedChange(object sender, CheckedChangedEventArgs e)
     {
         // Handle radio button checked event
@@ -16,18 +18,29 @@ public partial class HomePage : ContentPage
         Console.WriteLine($"Selected option: {rb_text}");
     }
 
-    private void OnContinueClicked(object sender, EventArgs e)
+    private async void OnContinueClicked(object sender, EventArgs e)
     {
-        // Perform appropriate navigation or logic based on the selected user (faculty or student)
-        if (rb_text == "Faculty")
+        if (rb_text != null && rb_text.Length > 0)
         {
-            //DependencyService.Get<IToastService>().ShowToast(selectedUser);
-            Console.WriteLine($"Selected option: {rb_text}");
+            // Perform appropriate navigation or logic based on the selected user (faculty or student)
+            if (rb_text == "Faculty")
+            {
+                Console.WriteLine($"Selected option: {rb_text}");
+                Data.Role = rb_text;
+
+            }
+            else if (rb_text == "Student")
+            {
+                //DependencyService.Get<IToastService>().ShowToast(selectedUser);
+                Console.WriteLine($"Selected option: {rb_text}");
+                Data.Role = rb_text;
+            }
+
+            // Navigate to the home page after successful registration
+            var mainHomePage = new MainHomePage();
+            mainHomePage.Data = Data;
+            await Navigation.PushAsync(mainHomePage);
         }
-        else if (rb_text == "Student")
-        {
-            //DependencyService.Get<IToastService>().ShowToast(selectedUser);
-            Console.WriteLine($"Selected option: {rb_text}");
-        }
+        
     }
 }
