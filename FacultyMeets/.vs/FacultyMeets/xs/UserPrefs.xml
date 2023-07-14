@@ -1,27 +1,17 @@
 ﻿<Properties StartupConfiguration="{2EDAB2D7-89F1-4E36-A64D-7E27167CC33D}|Default">
-  <MonoDevelop.Ide.ItemProperties.FacultyMeets PreferredExecutionTarget="Android.pixel_5_-_api_32" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_32" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.68" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FacultyMeets/MainPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FacultyMeets/LoginPage.xaml">
     <Files>
-      <File FileName="FacultyMeets/LoginPage.xaml" Line="15" Column="1" />
+      <File FileName="FacultyMeets/LoginPage.xaml" Line="19" Column="43" />
       <File FileName="FacultyMeets/LoginPage.xaml.cs" Line="12" Column="6" />
-      <File FileName="FacultyMeets/RegisterPage.xaml" Line="16" Column="1" />
-      <File FileName="FacultyMeets/RegisterPage.xaml.cs" Line="31" Column="1" />
-      <File FileName="FacultyMeets/MainPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="FacultyMeets/MainPage.xaml" Line="1" Column="40" />
+      <File FileName="FacultyMeets/RegisterPage.xaml.cs" Line="8" Column="6" />
+      <File FileName="FacultyMeets/Resources/Styles/Colors.xaml" Line="44" Column="31" />
+      <File FileName="FacultyMeets/RegisterPage.xaml" Line="21" Column="49" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="FacultyMeets" selected="True">
-            <Node name="FacultyMeets" expanded="True">
+          <Node name="FacultyMeets">
+            <Node name="FacultyMeets">
               <Node name="Platforms" expanded="True">
                 <Node name="Android" expanded="True" />
                 <Node name="iOS" expanded="True" />
@@ -29,10 +19,10 @@
               <Node name="Resources" expanded="True">
                 <Node name="AppIcon" expanded="True" />
                 <Node name="Images" expanded="True" />
+                <Node name="Styles" expanded="True" />
               </Node>
-              <Node name="LoginPage.xaml" expanded="True" />
+              <Node name="LoginPage.xaml" selected="True" />
               <Node name="MainPage.xaml" expanded="True" />
-              <Node name="RegisterPage.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -42,4 +32,13 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.FacultyMeets PreferredExecutionTarget="Android.pixel_5_-_api_32" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_32" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.68" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
