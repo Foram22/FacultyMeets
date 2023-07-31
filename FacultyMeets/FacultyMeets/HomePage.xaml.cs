@@ -38,7 +38,7 @@ public partial class HomePage : ContentPage
 
             // Navigate to the home page after successful registration
             var mainHomePage = new MainHomePage();
-            mainHomePage.Data = Data;
+            //mainHomePage.Data = Data;
             await Navigation.PushAsync(mainHomePage);
         }
         

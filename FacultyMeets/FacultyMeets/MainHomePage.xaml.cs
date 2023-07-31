@@ -6,6 +6,4 @@ public partial class MainHomePage : ContentPage
 	{
 		InitializeComponent();
 	}
-
-    public User Data { get; set; }
 }

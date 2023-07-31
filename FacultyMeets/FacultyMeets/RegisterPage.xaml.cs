@@ -15,18 +15,30 @@ public partial class RegisterPage : ContentPage
         string password = PasswordEntry.Text;
 
         // Validate input and create a new user account
-        // You can use authentication services like Firebase Authentication or ASP.NET Identity
+        if (fullName == null || fullName.Length <= 0)
+        {
+            
+        }
+        else if (email == null || email.Length <= 0)
+        {
+            
+        }
+        else if (password == null || password.Length <= 0)
+        {
+            
+        }
+        else {
+            var user = new User();
 
-        // Set the data
-        var user = new User();
-        user.Email = email;
-        user.Name = fullName;
-        user.Password = password;
+            user.Name = fullName;
+            user.Email = email;
+            user.Password = password;
 
-        // Navigate to the home page after successful registration
-        var homePage = new HomePage();
-        homePage.Data = user;
-        Navigation.PushAsync(new HomePage());
+            // Navigate to the home page after successful registration
+            var homePage = new HomePage();
+            homePage.Data = user;
+            Navigation.PushAsync(new HomePage());
+        }
     }
 
     private async void OnLoginClicked(object sender, EventArgs e)
