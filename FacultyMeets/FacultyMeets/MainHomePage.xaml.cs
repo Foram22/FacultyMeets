@@ -1,9 +1,11 @@
-﻿namespace FacultyMeets;
+﻿using FacultyMeets;
+
+namespace FacultyMeets;
 
 public partial class MainHomePage : ContentPage
 {
+
 	public MainHomePage()
 	{
-		InitializeComponent();
 	}
 }
