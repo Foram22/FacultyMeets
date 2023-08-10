@@ -1,32 +1,28 @@
 ﻿<Properties StartupConfiguration="{2EDAB2D7-89F1-4E36-A64D-7E27167CC33D}|Default">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.FacultyMeets PreferredExecutionTarget="Android.pixel_5_-_api_32" />
   <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_32" />
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.68" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.68" />
+  <MonoDevelop.Ide.ItemProperties.FacultyMeets PreferredExecutionTarget="Android.pixel_5_-_api_32" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FacultyMeets/MainHomePage.xaml">
     <Files>
-      <File FileName="FacultyMeets/MainHomePage.xaml.cs" Line="8" Column="23" />
-      <File FileName="FacultyMeets/MainHomePage.xaml" />
+      <File FileName="FacultyMeets/MainHomePage.xaml" Line="10" Column="13" />
+      <File FileName="FacultyMeets/MainHomePage.xaml.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FacultyMeets" expanded="True">
-            <Node name="FacultyMeets" expanded="True">
-              <Node name="MainHomePage.xaml" expanded="True" />
+            <Node name="FacultyMeets">
               <Node name="MainPage.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

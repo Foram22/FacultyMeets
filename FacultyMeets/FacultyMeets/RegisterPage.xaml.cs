@@ -35,9 +35,9 @@ public partial class RegisterPage : ContentPage
             user.Password = password;
 
             // Navigate to the home page after successful registration
-            var homePage = new HomePage();
-            homePage.Data = user;
-            Navigation.PushAsync(new HomePage());
+            var rolePage = new RolePage();
+            rolePage.Data = user;
+            Navigation.PushAsync(new RolePage());
         }
     }
 

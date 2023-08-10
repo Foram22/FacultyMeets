@@ -4,8 +4,7 @@
              x:Class="FacultyMeets.RegisterPage"
              Title="RegisterPage">
     <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-        <Image Source="cambrian_logo.png" WidthRequest="150" HeightRequest="150"/>
-
+        
         <Label Text="Registration" FontSize="26" HorizontalOptions="Center" Margin="0,0,0,20" FontAttributes="Bold"/>
 
         <Label Text="Name" TextColor="{x:DynamicResource color_red}"/>

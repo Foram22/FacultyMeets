@@ -82,6 +82,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = FacultyMeets.Resources.Sty
 build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
 
+[/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/RolePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FacultyMeets.RolePage.xaml
+build_metadata.AdditionalFiles.TargetPath = RolePage.xaml
+build_metadata.AdditionalFiles.RelativePath = RolePage.xaml
+
 [/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/SettingPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FacultyMeets.SettingPage.xaml
