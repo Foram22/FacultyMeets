@@ -8,8 +8,6 @@ public partial class RolePage : ContentPage
         InitializeComponent();
     }
 
-    public User Data { get; set; }
-
     private void OnCheckedChange(object sender, CheckedChangedEventArgs e)
     {
         // Handle radio button checked event
@@ -41,6 +39,6 @@ public partial class RolePage : ContentPage
             //mainHomePage.Data = Data;
             await Navigation.PushAsync(mainHomePage);
         }
-        
+
     }
 }
