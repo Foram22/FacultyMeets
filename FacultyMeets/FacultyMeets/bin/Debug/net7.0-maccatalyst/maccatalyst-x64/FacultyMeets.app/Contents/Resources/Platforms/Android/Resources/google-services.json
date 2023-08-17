@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "555241294550",
+    "firebase_url": "https://facultymeets-default-rtdb.firebaseio.com",
+    "project_id": "facultymeets",
+    "storage_bucket": "facultymeets.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555241294550:android:da5ca4abfed9363a495777",
+        "android_client_info": {
+          "package_name": "com.companyname.facultymeets"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "555241294550-6srubaus5gsbqumk92jd7pg608p2fk71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDIXe41Utd8_fkROzcijCmQ3CdWjZxWhI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "555241294550-6srubaus5gsbqumk92jd7pg608p2fk71.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "555241294550-7525966fh226llnhd0pbv6pa43md1iqh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.companyname.facultymeets"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

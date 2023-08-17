@@ -1,6 +1,9 @@
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/FacultyMeets.runtimeconfig.json
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/FacultyMeets.dll
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/FacultyMeets.pdb
+/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/Firebase.Auth.dll
+/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/Firebase.dll
+/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/LiteDB.dll
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/Microsoft.Extensions.Configuration.dll
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/Microsoft.Extensions.Configuration.Abstractions.dll
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/Microsoft.Extensions.DependencyInjection.dll
@@ -11,6 +14,9 @@
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/Microsoft.Extensions.Options.dll
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/Microsoft.Extensions.Primitives.dll
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/Microsoft.Maui.Graphics.dll
+/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/Newtonsoft.Json.dll
+/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/System.Reactive.dll
+/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/System.Runtime.InteropServices.WindowsRuntime.dll
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/Microsoft.CSharp.dll
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/Microsoft.VisualBasic.Core.dll
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/Microsoft.VisualBasic.dll
@@ -243,6 +249,9 @@
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/_ProcessedBundleResourcesPath.items
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/_ProcessedContentPath.items
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/FacultyMeets.csproj.AssemblyReference.cache
+/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/resourcestamps/Firebase.Auth.stamp
+/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/resourcestamps/Firebase.stamp
+/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/resourcestamps/LiteDB.stamp
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/resourcestamps/Microsoft.CSharp.stamp
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/resourcestamps/Microsoft.Extensions.Configuration.Abstractions.stamp
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/resourcestamps/Microsoft.Extensions.Configuration.stamp
@@ -266,6 +275,7 @@
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/resourcestamps/Microsoft.Win32.Registry.stamp
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/resourcestamps/mscorlib.stamp
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/resourcestamps/netstandard.stamp
+/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/resourcestamps/Newtonsoft.Json.stamp
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/resourcestamps/System.AppContext.stamp
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/resourcestamps/System.Buffers.stamp
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/resourcestamps/System.Collections.Concurrent.stamp
@@ -346,6 +356,7 @@
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/resourcestamps/System.Numerics.stamp
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/resourcestamps/System.Numerics.Vectors.stamp
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/resourcestamps/System.ObjectModel.stamp
+/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/resourcestamps/System.Reactive.stamp
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/resourcestamps/System.Reflection.DispatchProxy.stamp
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/resourcestamps/System.Reflection.stamp
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/resourcestamps/System.Reflection.Emit.stamp
@@ -366,6 +377,7 @@
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/resourcestamps/System.Runtime.InteropServices.stamp
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/resourcestamps/System.Runtime.InteropServices.JavaScript.stamp
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/resourcestamps/System.Runtime.InteropServices.RuntimeInformation.stamp
+/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/resourcestamps/System.Runtime.InteropServices.WindowsRuntime.stamp
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/resourcestamps/System.Runtime.Intrinsics.stamp
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/resourcestamps/System.Runtime.Loader.stamp
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/resourcestamps/System.Runtime.Numerics.stamp

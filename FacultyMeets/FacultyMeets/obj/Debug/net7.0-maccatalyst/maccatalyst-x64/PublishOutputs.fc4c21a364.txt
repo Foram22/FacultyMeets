@@ -1,4 +1,7 @@
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../FacultyMeets.app/Contents/MonoBundle/icudt.dat
+/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../FacultyMeets.app/Contents/MonoBundle/Firebase.Auth.dll
+/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../FacultyMeets.app/Contents/MonoBundle/Firebase.dll
+/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../FacultyMeets.app/Contents/MonoBundle/LiteDB.dll
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../FacultyMeets.app/Contents/MonoBundle/Microsoft.Extensions.Configuration.dll
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../FacultyMeets.app/Contents/MonoBundle/Microsoft.Extensions.Configuration.Abstractions.dll
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../FacultyMeets.app/Contents/MonoBundle/Microsoft.Extensions.DependencyInjection.dll
@@ -9,6 +12,9 @@
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../FacultyMeets.app/Contents/MonoBundle/Microsoft.Extensions.Options.dll
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../FacultyMeets.app/Contents/MonoBundle/Microsoft.Extensions.Primitives.dll
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../FacultyMeets.app/Contents/MonoBundle/Microsoft.Maui.Graphics.dll
+/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../FacultyMeets.app/Contents/MonoBundle/Newtonsoft.Json.dll
+/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../FacultyMeets.app/Contents/MonoBundle/System.Reactive.dll
+/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../FacultyMeets.app/Contents/MonoBundle/System.Runtime.InteropServices.WindowsRuntime.dll
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../FacultyMeets.app/Contents/MonoBundle/FacultyMeets.dll
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../FacultyMeets.app/Contents/MonoBundle/Microsoft.CSharp.dll
 /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../FacultyMeets.app/Contents/MonoBundle/Microsoft.VisualBasic.Core.dll

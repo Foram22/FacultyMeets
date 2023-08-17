@@ -49,18 +49,25 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="FirebaseAuthentication.net" Version="4.0.2" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="FirebaseDatabase.net" Version="4.2.0" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\" />
 	  <None Remove="Resources\Images\college_icon_cambrian.png" />
 	  <None Remove="ModelClasses\" />
+	  <None Remove="Platforms\Android\Resources\google-services.json" />
+	  <None Remove="ViewModels\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Resources\Images\" />
 	  <Folder Include="ModelClasses\" />
+	  <Folder Include="ViewModels\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\Images\cambrian_logo.png" />
+	  <BundleResource Include="Platforms\Android\Resources\google-services.json" />
 	</ItemGroup>
 </Project>
