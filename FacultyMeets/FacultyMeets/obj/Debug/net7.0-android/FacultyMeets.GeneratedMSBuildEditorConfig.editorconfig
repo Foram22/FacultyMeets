@@ -14,6 +14,12 @@ build_property.IncludeAllContentForSelfExtract =
 build_property.RootNamespace = FacultyMeets
 build_property.ProjectDir = /Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/
 
+[/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/AddAvailabilityPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FacultyMeets.AddAvailabilityPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AddAvailabilityPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AddAvailabilityPage.xaml
+
 [/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FacultyMeets.App.xaml
@@ -25,12 +31,6 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FacultyMeets.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
-
-[/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/AvailabilityPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = FacultyMeets.AvailabilityPage.xaml
-build_metadata.AdditionalFiles.TargetPath = AvailabilityPage.xaml
-build_metadata.AdditionalFiles.RelativePath = AvailabilityPage.xaml
 
 [/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/DashboardPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
@@ -97,3 +97,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FacultyMeets.RolePage.xaml
 build_metadata.AdditionalFiles.TargetPath = RolePage.xaml
 build_metadata.AdditionalFiles.RelativePath = RolePage.xaml
+
+[/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/ShowAvailabilityPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FacultyMeets.ShowAvailabilityPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ShowAvailabilityPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ShowAvailabilityPage.xaml

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FacultyMeets.ShowAvailabilityPage"
+             Title="ShowAvailabilityPage">
+    <ListView x:Name="AvailabilityListView" Margin="20" >
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <HorizontalStackLayout>
+
+                        <Label Text="From: " FontSize="Medium"/>
+                        <Label Text="{Binding StartTime, StringFormat='{0:hh:mm tt}'}"
+                               FontSize="Medium" />
+                        <Label Text=" To: " FontSize="Medium"/>
+                        <Label Text="{Binding EndTime, StringFormat='{0:hh:mm tt}'}"
+                               FontSize="Medium" />
+                    </HorizontalStackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
