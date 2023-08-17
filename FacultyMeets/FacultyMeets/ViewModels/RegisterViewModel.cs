@@ -1,7 +1,8 @@
 ﻿using System.ComponentModel;
-using Firebase.Database;
 using Firebase.Auth;
+using Firebase.Database;
 using Firebase.Database.Query;
+using Newtonsoft.Json;
 
 namespace FacultyMeets.ViewModels
 {
@@ -27,6 +28,15 @@ namespace FacultyMeets.ViewModels
             {
                 selectedRole = value;
                 RaisePropertyChanged("SelectedRole");
+            }
+        }
+
+        public string Id
+        {
+            get => id;
+            set {
+                id = value;
+                RaisePropertyChanged("Id");
             }
         }
 
@@ -73,6 +83,7 @@ namespace FacultyMeets.ViewModels
 
         public Command RegisterUser { get; }
         public Command SetUserRole { get; }
+        public Command LoginUser { get; }
 
 
 
@@ -89,30 +100,75 @@ namespace FacultyMeets.ViewModels
         {
             this._navigation = navigation;
             RegisterUser = new Command(RegisterUserTappedAsync);
-            SetUserRole = new Command<string>(SetUserRoleAsync);   
+            SetUserRole = new Command<string>(SetUserRoleAsync);
+            LoginUser = new Command(LoginUserAsync);
         }
 
-        
+
+
+        private async void LoginUserAsync(object obj)
+        {
+            try
+            {
+                var authProvider = new FirebaseAuthProvider(new FirebaseConfig(webApiKey));
+                var firebaseUser = await authProvider.SignInWithEmailAndPasswordAsync(Email, Password);
+
+                if (firebaseUser != null)
+                {
+                    var userId = firebaseUser.User.LocalId;
+
+                    var firebaseClient = new FirebaseClient("https://facultymeets-default-rtdb.firebaseio.com/");
+                    var users = await firebaseClient.Child("users").Child(userId).OnceSingleAsync<User>();
+                    User userModel = new User
+                    {
+                        Name = users.Name,
+                        Email = users.Email,
+                        Password = users.Password,
+                        Id = users.Id,
+                        Role = users.Role
+                    };
+
+                    Preferences.Set("user", JsonConvert.SerializeObject(userData));
+                    await _navigation.PushAsync(new MainHomePage());
+                }
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage.DisplayAlert("Alert", ex.Message, "OK");
+                throw;
+            }
+        }
 
 
         private async void RegisterUserTappedAsync(object obj)
         {
             try
             {
+                var authProvider = new FirebaseAuthProvider(new FirebaseConfig(webApiKey));
+                var firebaseUser = await authProvider.CreateUserWithEmailAndPasswordAsync(Email, Password);
+
                 // Initialize Firebase Realtime Database client
                 var firebaseClient = new FirebaseClient(databaseUrl);
                 var childRef = firebaseClient.Child("users");
-                var user = await childRef.PostAsync(new User
+
+                if (firebaseUser != null && firebaseUser.User.LocalId != null)
                 {
-                    Name = Name,
-                    Email = Email,
-                    Password = Password,
-                    Role = "Student"
-                });
+                    var user = childRef.Child(firebaseUser.User.LocalId).PutAsync(new User
+                    {
+                        Name = Name,
+                        Email = Email,
+                        Password = Password,
+                        Role = "Student"
+                    });
 
-                Preferences.Set("currentUser", user.Key);
+                    Preferences.Set("currentUser", firebaseUser.User.LocalId);
 
-                await _navigation.PushAsync(new RolePage());
+                    await _navigation.PushAsync(new RolePage());
+                }
+                else
+                {
+                    await Application.Current.MainPage.DisplayAlert("Alert", "Error while registering the user role. \nPlease try again later.", "OK");
+                }
                 
             }
             catch (Exception ex)
@@ -139,6 +195,11 @@ namespace FacultyMeets.ViewModels
                     {
                         childRef.Role = role;
                         await firebaseClient.Child("users").Child(id).PutAsync(userData);
+
+                        if (role == "Faculty" || role == "faculty")
+                        {
+                            await firebaseClient.Child("faculty").Child(id).PutAsync(userData);
+                        }
 
                         await _navigation.PushAsync(new LoginPage());
                     }

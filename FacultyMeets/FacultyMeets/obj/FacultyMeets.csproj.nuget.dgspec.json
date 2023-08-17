@@ -50,13 +50,17 @@
         "net7.0-android33.0": {
           "targetAlias": "net7.0-android",
           "dependencies": {
-            "FirebaseAuthentication.net": {
+            "Firebase.Auth": {
               "target": "Package",
-              "version": "[4.0.2, )"
+              "version": "[1.0.0, )"
             },
-            "FirebaseDatabase.net": {
+            "Firebase.Database": {
               "target": "Package",
-              "version": "[4.2.0, )"
+              "version": "[1.0.0, )"
+            },
+            "Firebase.Net": {
+              "target": "Package",
+              "version": "[1.1.1, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -180,13 +184,17 @@
         "net7.0-ios16.1": {
           "targetAlias": "net7.0-ios",
           "dependencies": {
-            "FirebaseAuthentication.net": {
+            "Firebase.Auth": {
               "target": "Package",
-              "version": "[4.0.2, )"
+              "version": "[1.0.0, )"
             },
-            "FirebaseDatabase.net": {
+            "Firebase.Database": {
               "target": "Package",
-              "version": "[4.2.0, )"
+              "version": "[1.0.0, )"
+            },
+            "Firebase.Net": {
+              "target": "Package",
+              "version": "[1.1.1, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -255,13 +263,17 @@
         "net7.0-maccatalyst16.1": {
           "targetAlias": "net7.0-maccatalyst",
           "dependencies": {
-            "FirebaseAuthentication.net": {
+            "Firebase.Auth": {
               "target": "Package",
-              "version": "[4.0.2, )"
+              "version": "[1.0.0, )"
             },
-            "FirebaseDatabase.net": {
+            "Firebase.Database": {
               "target": "Package",
-              "version": "[4.2.0, )"
+              "version": "[1.0.0, )"
+            },
+            "Firebase.Net": {
+              "target": "Package",
+              "version": "[1.1.1, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",

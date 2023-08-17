@@ -2,17 +2,19 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FacultyMeets.LoginPage"
+             xmlns:viewmodel="clr-namespace:FacultyMeets.ViewModels"
+             x:DataType="viewmodel:RegisterViewModel"
              Title="LoginPage">
     <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
         <Label Text="Login" FontSize="26" HorizontalOptions="Center" Margin="0,0,0,20" FontAttributes="Bold"/>
 
         <Label Text="Email" TextColor="{x:DynamicResource color_red}" />
-        <Entry Placeholder="Email" x:Name="EmailEntry" Margin="0,0,0,20"/>
+        <Entry Placeholder="Email" x:Name="EmailEntry" Margin="0,0,0,20" Text="{Binding Email}"/>
 
         <Label Text="Password" TextColor="{x:DynamicResource color_red}" />
-        <Entry Placeholder="Password" x:Name="PasswordEntry" IsPassword="True" Margin="0,0,0,20"/>
+        <Entry Placeholder="Password" x:Name="PasswordEntry" IsPassword="True" Margin="0,0,0,20" Text="{Binding Password}"/>
 
-        <Button Text="Login" Clicked="OnLoginClicked" TextColor="White" BackgroundColor="{x:DynamicResource color_red}"/>
+        <Button Text="Login" Command="{Binding LoginUser}" TextColor="White" BackgroundColor="{x:DynamicResource color_red}"/>
 
         <Label Text="Forgot Password" Margin="0,20,0,0" />
 

@@ -22,12 +22,6 @@ build_metadata.AdditionalFiles.ManifestResourceName = FacultyMeets.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/HistoryPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = FacultyMeets.HistoryPage.xaml
-build_metadata.AdditionalFiles.TargetPath = HistoryPage.xaml
-build_metadata.AdditionalFiles.RelativePath = HistoryPage.xaml
-
 [/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/HomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FacultyMeets.HomePage.xaml
@@ -51,12 +45,6 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FacultyMeets.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
-
-[/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/NotificationPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = FacultyMeets.NotificationPage.xaml
-build_metadata.AdditionalFiles.TargetPath = NotificationPage.xaml
-build_metadata.AdditionalFiles.RelativePath = NotificationPage.xaml
 
 [/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/ProfilePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
@@ -87,9 +75,3 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FacultyMeets.RolePage.xaml
 build_metadata.AdditionalFiles.TargetPath = RolePage.xaml
 build_metadata.AdditionalFiles.RelativePath = RolePage.xaml
-
-[/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/SettingPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = FacultyMeets.SettingPage.xaml
-build_metadata.AdditionalFiles.TargetPath = SettingPage.xaml
-build_metadata.AdditionalFiles.RelativePath = SettingPage.xaml

@@ -57,9 +57,6 @@
     
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Home" Priority="0" Order="Primary" Clicked="OnHomeClicked" />
-        <ToolbarItem Text="Notification" Priority="1" Order="Primary" Clicked="OnNotificationClicked" />
-        <ToolbarItem Text="History" Priority="2" Order="Primary" Clicked="OnHistoryClicked" />
-        <ToolbarItem Text="Setting" Priority="3" Order="Primary" Clicked="OnSettingClicked" />
         <ToolbarItem Text="Profile" Priority="4" Order="Primary" Clicked="OnProfileClicked" />
     </ContentPage.ToolbarItems>
 

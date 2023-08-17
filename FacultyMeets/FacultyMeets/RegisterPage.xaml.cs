@@ -1,6 +1,4 @@
-﻿using System.Reflection.Metadata;
-using FacultyMeets.ViewModels;
-using Firebase.Auth;
+﻿using FacultyMeets.ViewModels;
 namespace FacultyMeets;
 
 [XamlCompilation(XamlCompilationOptions.Compile)]
