@@ -2,20 +2,22 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FacultyMeets.RolePage"
+             xmlns:viewmodel="clr-namespace:FacultyMeets.ViewModels"
+             x:DataType="viewmodel:RegisterViewModel"
              Title="RolePage">
 
-    
+
     <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
         <Image Source="Resources/Images/cambrian_logo.png" WidthRequest="150" HeightRequest="150"/>
 
         <Label Text="Choose Role" FontSize="18" HorizontalOptions="Center" Margin="0,10" />
-        <StackLayout>
-            <RadioButton x:Name="rb_faculty" Content="Faculty" CheckedChanged="OnCheckedChange" Style="{StaticResource Key=CustomRBStyle}"/>
-            <RadioButton x:Name="rb_student" Content="Student" CheckedChanged="OnCheckedChange" Style="{StaticResource Key=CustomRBStyle}"/>
+        <StackLayout x:Name="roleGroup">
+            <RadioButton Content="Faculty" CheckedChanged="OnCheckedChange" Style="{StaticResource Key=CustomRBStyle}" Value="Faculty" GroupName="Roles"/>
+            <RadioButton Content="Student" CheckedChanged="OnCheckedChange" Style="{StaticResource Key=CustomRBStyle}" Value="Student" GroupName="ROles"/>
 
         </StackLayout>
 
-        <Button x:Name="btnContinue" Text="Continue" Clicked="OnContinueClicked" BackgroundColor="{x:DynamicResource color_red}" TextColor="White"/>
+        <Button x:Name="btnContinue" Text="Continue" Command="{Binding SetUserRole}" CommandParameter="{Binding SelectedRole}" BackgroundColor="{x:DynamicResource color_red}" TextColor="White"/>
     </StackLayout>
     
 

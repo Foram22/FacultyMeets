@@ -1,11 +1,22 @@
-﻿namespace FacultyMeets;
+﻿using FacultyMeets.ViewModels;
+using Firebase.Database;
+using Firebase.Database.Query;
+
+namespace FacultyMeets;
 
 public partial class RolePage : ContentPage
 {
+    public string webApiKey = "AIzaSyBDIXe41Utd8_fkROzcijCmQ3CdWjZxWhI";
+    public string databaseUrl = "https://facultymeets-default-rtdb.firebaseio.com/";
+
     string rb_text = "";
+    string userId = "";
+
+
     public RolePage()
     {
         InitializeComponent();
+        BindingContext = new RegisterViewModel(Navigation);
     }
 
     private void OnCheckedChange(object sender, CheckedChangedEventArgs e)
@@ -13,32 +24,9 @@ public partial class RolePage : ContentPage
         // Handle radio button checked event
         var radioButton = (RadioButton)sender;
         rb_text = radioButton.Content.ToString();
+
+        var viewModel = BindingContext as RegisterViewModel;
+        viewModel.SelectedRole = rb_text;
         Console.WriteLine($"Selected option: {rb_text}");
-    }
-
-    private async void OnContinueClicked(object sender, EventArgs e)
-    {
-        if (rb_text != null && rb_text.Length > 0)
-        {
-            // Perform appropriate navigation or logic based on the selected user (faculty or student)
-            if (rb_text == "Faculty")
-            {
-                Console.WriteLine($"Selected option: {rb_text}");
-                Data.Role = rb_text;
-
-            }
-            else if (rb_text == "Student")
-            {
-                //DependencyService.Get<IToastService>().ShowToast(selectedUser);
-                Console.WriteLine($"Selected option: {rb_text}");
-                Data.Role = rb_text;
-            }
-
-            // Navigate to the home page after successful registration
-            var mainHomePage = new MainHomePage();
-            //mainHomePage.Data = Data;
-            await Navigation.PushAsync(mainHomePage);
-        }
-
     }
 }
