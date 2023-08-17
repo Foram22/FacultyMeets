@@ -1,10 +1,13 @@
-﻿using Microsoft.Maui.Controls;
+﻿using Xamarin.Essentials;
+using Newtonsoft.Json;
+using Android.Content;
 
 namespace FacultyMeets;
 
 public partial class MainHomePage : ContentPage
 {
     public List<string> Items { get; set; }
+    User user;
 
     public MainHomePage()
 	{
@@ -25,39 +28,82 @@ public partial class MainHomePage : ContentPage
         BindingContext = this;
     }
 
-    private void OnHomeClicked(object sender, EventArgs e)
-    {
-        // Handle the Settings menu item click
-        // Implement navigation to the settings page or any other action
+    public void GetUserData() {
+        string jsonStr = Xamarin.Essentials.Preferences.Get("user", "");
+        user = JsonConvert.DeserializeObject<User>(jsonStr);
     }
 
-    private void OnNotificationClicked(object sender, EventArgs e)
+    protected override void OnAppearing()
     {
-        // Handle the About menu item click
-        // Implement navigation to the about page or any other action
+        base.OnAppearing();
+
+        user = new User();
+        GetUserData();
+        // Clear existing toolbar items
+        ToolbarItems.Clear();
+
+        // Always add Home and Profile items
+        ToolbarItems.Add(new ToolbarItem
+        {
+            Text = "Home",
+            Command = new Command(NavigateHome) // Define this command to navigate to the home page
+        });
+
+        ToolbarItems.Add(new ToolbarItem
+        {
+            Text = "Profile",
+            Command = new Command(NavigateProfile) // Define this command to navigate to the profile page
+        });
+
+        // Conditionally add other items based on user type
+        if (user.Role == "faculty" || user.Role == "Faculty")
+        {
+            ToolbarItems.Add(new ToolbarItem
+            {
+                Text = "Availability",
+                Command = new Command(NavigateAvailability) // Assuming you've defined this command
+            });
+            
+        }
+        else
+        {
+            ToolbarItems.Add(new ToolbarItem
+            {
+                Text = "Faculty",
+                Command = new Command(NavigateFaculty) // Assuming you've defined this command
+            });
+        }
+
+        NavigateHome();
     }
 
-    private void OnHistoryClicked(object sender, EventArgs e)
+
+    void NavigateHome()
     {
-        // Handle the Settings menu item click
-        // Implement navigation to the settings page or any other action
+        // Navigate to the Home page or perform related logic.
+        LoadDesign(new DashboardPage());
     }
 
-    private void OnSettingClicked(object sender, EventArgs e)
+    void NavigateProfile()
     {
-        // Handle the About menu item click
-        // Implement navigation to the about page or any other action
+        // Navigate to the Profile page or perform related logic.
+        LoadDesign(new ProfilePage(user));
     }
 
-    private void OnProfileClicked(object sender, EventArgs e)
+    void NavigateAvailability()
     {
-        // Handle the About menu item click
-        // Implement navigation to the about page or any other action
+
     }
 
-    private void OnSearchButtonPressed(object sender, EventArgs e)
+    void NavigateFaculty()
     {
-        // Handle the About menu item click
-        // Implement navigation to the about page or any other action
+
     }
+
+    private void LoadDesign(View designView)
+    {
+        ContentGrid.Children.Clear(); // Clear previous content
+        ContentGrid.Children.Add(designView);
+    }
+
 }

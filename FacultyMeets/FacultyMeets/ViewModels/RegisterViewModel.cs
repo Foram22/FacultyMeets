@@ -128,7 +128,7 @@ namespace FacultyMeets.ViewModels
                         Role = users.Role
                     };
 
-                    Preferences.Set("user", JsonConvert.SerializeObject(userData));
+                    Xamarin.Essentials.Preferences.Set("user", JsonConvert.SerializeObject(userModel));
                     await _navigation.PushAsync(new MainHomePage());
                 }
             }

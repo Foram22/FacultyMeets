@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0tgqklcf0BkITgHK0QVa55wl4bQEPLsObAsAt7TJcHJaGuBtU4CvB81XcjJq2Uiyep4N5u/0Ffu23I2kC/Kj2A==",
+  "dgSpecHash": "uZnyaMt8eSS7inztIr3gchMoligZSiVPqARcMQFMPZ89c51S7SrnIKroYES3alpcH9+DkwfdI6fesEjtMfNfNw==",
   "success": true,
   "projectFilePath": "/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/FacultyMeets.csproj",
   "expectedPackageFiles": [
@@ -88,6 +88,7 @@
     "/Users/forampatel/.nuget/packages/system.net.nameresolution/4.0.0/system.net.nameresolution.4.0.0.nupkg.sha512",
     "/Users/forampatel/.nuget/packages/system.net.primitives/4.0.11/system.net.primitives.4.0.11.nupkg.sha512",
     "/Users/forampatel/.nuget/packages/system.net.sockets/4.1.0/system.net.sockets.4.1.0.nupkg.sha512",
+    "/Users/forampatel/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
     "/Users/forampatel/.nuget/packages/system.objectmodel/4.0.12/system.objectmodel.4.0.12.nupkg.sha512",
     "/Users/forampatel/.nuget/packages/system.private.uri/4.0.1/system.private.uri.4.0.1.nupkg.sha512",
     "/Users/forampatel/.nuget/packages/system.reflection/4.1.0/system.reflection.4.1.0.nupkg.sha512",
@@ -195,6 +196,7 @@
     "/Users/forampatel/.nuget/packages/xamarin.androidx.viewpager/1.0.0.15/xamarin.androidx.viewpager.1.0.0.15.nupkg.sha512",
     "/Users/forampatel/.nuget/packages/xamarin.androidx.viewpager2/1.0.0.16/xamarin.androidx.viewpager2.1.0.0.16.nupkg.sha512",
     "/Users/forampatel/.nuget/packages/xamarin.androidx.window/1.0.0.10/xamarin.androidx.window.1.0.0.10.nupkg.sha512",
+    "/Users/forampatel/.nuget/packages/xamarin.essentials/1.8.0/xamarin.essentials.1.8.0.nupkg.sha512",
     "/Users/forampatel/.nuget/packages/xamarin.google.android.material/1.7.0/xamarin.google.android.material.1.7.0.nupkg.sha512",
     "/Users/forampatel/.nuget/packages/xamarin.google.crypto.tink.android/1.7.0.1/xamarin.google.crypto.tink.android.1.7.0.1.nupkg.sha512",
     "/Users/forampatel/.nuget/packages/xamarin.google.guava.listenablefuture/1.0.0.10/xamarin.google.guava.listenablefuture.1.0.0.10.nupkg.sha512",

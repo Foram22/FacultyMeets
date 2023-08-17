@@ -4,60 +4,13 @@
              xmlns:local="clr-namespace:FacultyMeets"
              x:Class="FacultyMeets.MainHomePage">
 
-    <StackLayout>
-        <Label Text="Welcome! Foram" FontSize="22" Margin="10" FontAttributes="Bold" TextColor="{x:DynamicResource color_red}"/>
-        <SearchBar x:Name="search_bar" Placeholder="Search for Faculty" SearchButtonPressed="OnSearchButtonPressed" TextColor="{x:DynamicResource color_red}" PlaceholderColor="{x:DynamicResource color_red}" CancelButtonColor="{x:DynamicResource color_red}"/>
-
-        <Label Text="Upcoming Meetings" FontSize="20" Margin="10,30,0,0" FontAttributes="Bold" TextColor="{x:DynamicResource color_red}"/>
-        <CollectionView x:Name="UpComingMeetingListView"
-                        ItemsSource="{Binding Items}"
-                        SelectionMode="Single">
-            <CollectionView.ItemsLayout>
-                <LinearItemsLayout Orientation="Horizontal" />
-            </CollectionView.ItemsLayout>
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <StackLayout BackgroundColor="{x:DynamicResource color_red}"
-                                 WidthRequest="200"
-                                 Margin="10"
-                                 Padding="10">
-                        <Label Text="{Binding}" TextColor="White" FontSize="16" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                        <StackLayout BackgroundColor="White" Margin="3" Padding="10">
-                            <Label Text="{Binding}" TextColor="Black" FontSize="16"/>
-                            <Label Text="{Binding}" TextColor="Black" FontSize="16"/>
-                        </StackLayout>
-                    </StackLayout>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-
-        <Label Text="Previous Meetings" FontSize="20" Margin="10,30,0,0" FontAttributes="Bold" TextColor="{x:DynamicResource color_red}"/>
-        <CollectionView x:Name="PreviousMeetingListView"
-                        ItemsSource="{Binding Items}"
-                        SelectionMode="Single">
-            <CollectionView.ItemsLayout>
-                <LinearItemsLayout Orientation="Horizontal" />
-            </CollectionView.ItemsLayout>
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <StackLayout BackgroundColor="{x:DynamicResource color_red}"
-                                 WidthRequest="200"
-                                 Margin="10"
-                                 Padding="10">
-                        <Label Text="{Binding}" TextColor="White" FontSize="16" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                        <StackLayout BackgroundColor="White" Margin="3" Padding="10">
-                            <Label Text="{Binding}" TextColor="Black" FontSize="16"/>
-                            <Label Text="{Binding}" TextColor="Black" FontSize="16"/>
-                        </StackLayout>
-                    </StackLayout>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-    </StackLayout>
+    <Grid x:Name="ContentGrid">
+        
+    </Grid>
     
-    <ContentPage.ToolbarItems>
+    <!--<ContentPage.ToolbarItems>
         <ToolbarItem Text="Home" Priority="0" Order="Primary" Clicked="OnHomeClicked" />
         <ToolbarItem Text="Profile" Priority="4" Order="Primary" Clicked="OnProfileClicked" />
-    </ContentPage.ToolbarItems>
+    </ContentPage.ToolbarItems>-->
 
 </ContentPage>

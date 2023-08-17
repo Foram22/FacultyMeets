@@ -22,6 +22,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = FacultyMeets.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
+[/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/DashboardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FacultyMeets.DashboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = DashboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = DashboardPage.xaml
+
 [/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/HomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FacultyMeets.HomePage.xaml

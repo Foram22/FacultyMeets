@@ -1,12 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FacultyMeets.ProfilePage"
-             Title="ProfilePage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
-</ContentPage>
+             x:Class="FacultyMeets.ProfilePage">
+
+    <StackLayout>
+
+        <Label Text="Profile" FontSize="26" HorizontalOptions="Center" Margin="30" FontAttributes="Bold" TextColor="{x:DynamicResource color_red}"/>
+
+        <StackLayout Padding="20">
+
+            <HorizontalStackLayout Margin="5">
+
+                <Label Text="Name:- " FontAttributes="Bold" TextColor="{x:DynamicResource color_red}"/>
+                <Label x:Name="Name" Text="{Binding Name}"/>
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Margin="5">
+
+                <Label Text="Email:- " FontAttributes="Bold" TextColor="{x:DynamicResource color_red}"/>
+                <Label x:Name="Email" Text="{Binding Email}"/>
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Margin="5">
+
+                <Label Text="Role:- " FontAttributes="Bold" TextColor="{x:DynamicResource color_red}"/>
+                <Label x:Name="Role" Text="{Binding Role}"/>
+
+            </HorizontalStackLayout>
+
+            <BoxView VerticalOptions="FillAndExpand" />
+
+            <Button Text="Logout" Clicked="OnLogoutPressed" TextColor="White" BackgroundColor="{x:DynamicResource color_red}" />
+        </StackLayout>
+
+    </StackLayout>
+</ContentView>
