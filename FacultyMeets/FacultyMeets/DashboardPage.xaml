@@ -7,7 +7,7 @@
     <StackLayout>
 
         <Label Text="Welcome! Foram" FontSize="22" Margin="10" FontAttributes="Bold" TextColor="{x:DynamicResource color_red}"/>
-        <SearchBar x:Name="search_bar" Placeholder="Search for Faculty" SearchButtonPressed="OnSearchButtonPressed" TextColor="{x:DynamicResource color_red}" PlaceholderColor="{x:DynamicResource color_red}" CancelButtonColor="{x:DynamicResource color_red}"/>
+        
 
         <Label Text="Upcoming Meetings" FontSize="20" Margin="10,30,0,0" FontAttributes="Bold" TextColor="{x:DynamicResource color_red}"/>
         <CollectionView x:Name="UpComingMeetingListView"

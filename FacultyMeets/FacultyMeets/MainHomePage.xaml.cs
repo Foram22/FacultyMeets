@@ -92,12 +92,12 @@ public partial class MainHomePage : ContentPage
 
     void NavigateAvailability()
     {
-
+        LoadDesign(new AvailabilityPage());
     }
 
     void NavigateFaculty()
     {
-
+        LoadDesign(new FacultyPage());
     }
 
     private void LoadDesign(View designView)
