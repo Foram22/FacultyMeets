@@ -7,7 +7,7 @@
 
         <Label Text="Profile" FontSize="26" HorizontalOptions="Center" Margin="30" FontAttributes="Bold" TextColor="{x:DynamicResource color_red}"/>
 
-        <StackLayout Padding="20">
+        <StackLayout Padding="20" VerticalOptions="FillAndExpand">
 
             <HorizontalStackLayout Margin="5">
 
@@ -32,7 +32,7 @@
 
             <BoxView VerticalOptions="FillAndExpand" />
 
-            <Button Text="Logout" Clicked="OnLogoutPressed" TextColor="White" BackgroundColor="{x:DynamicResource color_red}" />
+            <Button Text="Logout" Clicked="OnLogoutPressed" TextColor="White" BackgroundColor="{x:DynamicResource color_red}" VerticalOptions="End"/>
         </StackLayout>
 
     </StackLayout>
