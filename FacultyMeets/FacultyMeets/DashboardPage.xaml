@@ -11,28 +11,23 @@
 
         <Label Text="Upcoming Meetings" FontSize="20" Margin="10,30,0,0" FontAttributes="Bold" TextColor="{x:DynamicResource color_red}"/>
 
-        <ListView x:Name="AppointmentListView" Margin="20" SelectionMode="Single">
-        <ListView.ItemTemplate>
+        <CollectionView x:Name="AppointmentListView" Margin="20" SelectionMode="Single">
+        <CollectionView.ItemTemplate>
             <DataTemplate>
-                <ViewCell>
-                    
                         <StackLayout
                                 BackgroundColor="{x:DynamicResource color_red}"
-                                 WidthRequest="200"
                                  Margin="10"
                                  Padding="10">
                             <Label Text="{Binding Name}" TextColor="White" FontSize="16" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                             <StackLayout
                                         BackgroundColor="White" Margin="3" Padding="10">
-                                <Label Text="{Binding AppointmentStartTime}" TextColor="Black" FontSize="16"/>
-                                <Label Text="{Binding AppointmentEndTime}" TextColor="Black" FontSize="16"/>
+                                <Label Text="{Binding AppointmentStartTime}" TextColor="Black" FontSize="16" HorizontalTextAlignment="Center"/>
+                                <Label Text="{Binding AppointmentEndTime}" TextColor="Black" FontSize="16" HorizontalTextAlignment="Center"/>
                             </StackLayout>
                         </StackLayout>
-                    
-                </ViewCell>
             </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
 
 
         <!--<CollectionView x:Name="UpComingMeetingListView"

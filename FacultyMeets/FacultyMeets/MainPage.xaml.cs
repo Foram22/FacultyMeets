@@ -17,6 +17,7 @@ public partial class MainPage : ContentPage
 
         // Open another page
         await Navigation.PushAsync(new LoginPage());
+        //Navigation.RemovePage(Navigation.NavigationStack[Navigation.NavigationStack.Count - 2]);
     }
 }
 

@@ -16,4 +16,9 @@ public partial class LoginPage : ContentPage
         // Open another page
         await Navigation.PushAsync(new RegisterPage());
     }
+
+    private async void OnForgotClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new ForgotPasswordPage());
+    }
 }

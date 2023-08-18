@@ -13,7 +13,7 @@ public partial class RegisterPage : ContentPage
     private async void OnLoginClicked(object sender, EventArgs e)
     {
         // Navigate back to the login page
-        await Navigation.PushAsync(new LoginPage());
+        await Navigation.PopAsync();
     }
 
 }

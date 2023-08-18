@@ -84,6 +84,7 @@ namespace FacultyMeets.ViewModels
         public Command RegisterUser { get; }
         public Command SetUserRole { get; }
         public Command LoginUser { get; }
+        public Command ForgotPassword { get; }
 
 
 
@@ -102,6 +103,7 @@ namespace FacultyMeets.ViewModels
             RegisterUser = new Command(RegisterUserTappedAsync);
             SetUserRole = new Command<string>(SetUserRoleAsync);
             LoginUser = new Command(LoginUserAsync);
+            ForgotPassword = new Command(ForgotPasswordAsync);
         }
 
 
@@ -164,6 +166,8 @@ namespace FacultyMeets.ViewModels
                     Preferences.Set("currentUser", firebaseUser.User.LocalId);
 
                     await _navigation.PushAsync(new RolePage());
+                    _navigation.RemovePage(_navigation.NavigationStack[_navigation.NavigationStack.Count - 2]);
+                    
                 }
                 else
                 {
@@ -177,7 +181,6 @@ namespace FacultyMeets.ViewModels
                 throw;
             }
         }
-
 
 
         private async void SetUserRoleAsync(string role)
@@ -201,7 +204,7 @@ namespace FacultyMeets.ViewModels
                             await firebaseClient.Child("faculty").Child(id).PutAsync(userData);
                         }
 
-                        await _navigation.PushAsync(new LoginPage());
+                        await _navigation.PopAsync();
                     }
                     else
                     {
@@ -213,6 +216,40 @@ namespace FacultyMeets.ViewModels
                     await Application.Current.MainPage.DisplayAlert("Alert", "Error while updating the user role. \nPlease try again later.", "Ok");
                 }
 
+            }
+            catch (FirebaseException ex)
+            {
+                await Application.Current.MainPage.DisplayAlert("Alert", ex.Message, "OK");
+                throw;
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage.DisplayAlert("Alert", ex.Message, "OK");
+                throw;
+            }
+        }
+
+
+        private async void ForgotPasswordAsync(object obj)
+        {
+            try
+            {
+                var firebaseClient = new FirebaseClient(databaseUrl);
+                
+                var childRef = await firebaseClient.Child("users").OrderBy("Email").EqualTo(Email).OnceAsync<User>();
+                var authProvider = new FirebaseAuthProvider(new FirebaseConfig(webApiKey));
+                await authProvider.SendPasswordResetEmailAsync(Email);
+                if (childRef.Any())
+                {
+                    var id = childRef.FirstOrDefault().Object.Id;
+                    childRef.FirstOrDefault().Object.Password = Password;
+                    await firebaseClient.Child("users").Child(id).PutAsync(childRef.FirstOrDefault().Object);
+                    await _navigation.PopAsync();
+                }
+                else
+                {
+                    await Application.Current.MainPage.DisplayAlert("Alert", "Error while updateing the password. \nPlease try again later.", "OK");
+                }
             }
             catch (FirebaseException ex)
             {

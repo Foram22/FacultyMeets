@@ -40,6 +40,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = FacultyMeets.FacultyPage.x
 build_metadata.AdditionalFiles.TargetPath = FacultyPage.xaml
 build_metadata.AdditionalFiles.RelativePath = FacultyPage.xaml
 
+[/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/ForgotPasswordPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FacultyMeets.ForgotPasswordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ForgotPasswordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ForgotPasswordPage.xaml
+
 [/Users/forampatel/Documents/Semester_2/Android/FacultyMeets/FacultyMeets/FacultyMeets/HomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FacultyMeets.HomePage.xaml
