@@ -10,30 +10,32 @@
         
 
         <Label Text="Upcoming Meetings" FontSize="20" Margin="10,30,0,0" FontAttributes="Bold" TextColor="{x:DynamicResource color_red}"/>
-        <CollectionView x:Name="UpComingMeetingListView"
-                        ItemsSource="{Binding Items}"
-                        SelectionMode="Single">
-            <CollectionView.ItemsLayout>
-                <LinearItemsLayout Orientation="Horizontal" />
-            </CollectionView.ItemsLayout>
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <StackLayout BackgroundColor="{x:DynamicResource color_red}"
-                                 WidthRequest="200"
-                                 Margin="10"
-                                 Padding="10">
-                        <Label Text="{Binding}" TextColor="White" FontSize="16" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                        <StackLayout BackgroundColor="White" Margin="3" Padding="10">
-                            <Label Text="{Binding}" TextColor="Black" FontSize="16"/>
-                            <Label Text="{Binding}" TextColor="Black" FontSize="16"/>
-                        </StackLayout>
-                    </StackLayout>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
 
-        <Label Text="Previous Meetings" FontSize="20" Margin="10,30,0,0" FontAttributes="Bold" TextColor="{x:DynamicResource color_red}"/>
-        <CollectionView x:Name="PreviousMeetingListView"
+        <ListView x:Name="AppointmentListView" Margin="20" SelectionMode="Single">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    
+                        <StackLayout
+                                BackgroundColor="{x:DynamicResource color_red}"
+                                 WidthRequest="200"
+                                 Margin="10"
+                                 Padding="10">
+                            <Label Text="{Binding Name}" TextColor="White" FontSize="16" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                            <StackLayout
+                                        BackgroundColor="White" Margin="3" Padding="10">
+                                <Label Text="{Binding AppointmentStartTime}" TextColor="Black" FontSize="16"/>
+                                <Label Text="{Binding AppointmentEndTime}" TextColor="Black" FontSize="16"/>
+                            </StackLayout>
+                        </StackLayout>
+                    
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+
+        <!--<CollectionView x:Name="UpComingMeetingListView"
                         ItemsSource="{Binding Items}"
                         SelectionMode="Single">
             <CollectionView.ItemsLayout>
@@ -41,19 +43,10 @@
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <StackLayout BackgroundColor="{x:DynamicResource color_red}"
-                                 WidthRequest="200"
-                                 Margin="10"
-                                 Padding="10">
-                        <Label Text="{Binding}" TextColor="White" FontSize="16" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                        <StackLayout BackgroundColor="White" Margin="3" Padding="10">
-                            <Label Text="{Binding}" TextColor="Black" FontSize="16"/>
-                            <Label Text="{Binding}" TextColor="Black" FontSize="16"/>
-                        </StackLayout>
-                    </StackLayout>
+                    
                 </DataTemplate>
             </CollectionView.ItemTemplate>
-        </CollectionView>
+        </CollectionView>-->
 
     </StackLayout>
 </ContentView>

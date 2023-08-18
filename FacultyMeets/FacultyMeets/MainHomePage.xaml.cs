@@ -81,7 +81,7 @@ public partial class MainHomePage : ContentPage
     void NavigateHome()
     {
         // Navigate to the Home page or perform related logic.
-        LoadDesign(new DashboardPage());
+        LoadDesign(new DashboardPage(user));
     }
 
     void NavigateProfile()

@@ -6,7 +6,7 @@
     <StackLayout>
         <SearchBar x:Name="SearchBar" Placeholder="Search for Faculty" SearchButtonPressed="OnSearchButtonPressed" TextColor="{x:DynamicResource color_red}" PlaceholderColor="{x:DynamicResource color_red}" CancelButtonColor="{x:DynamicResource color_red}"/>
 
-        <ListView x:Name="FacultyListView">
+        <ListView x:Name="FacultyListView" SelectionMode="Single" SelectedItem="OnFacultySelected" ItemSelected="OnFacultySelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextCell Text="{Binding Name}" />

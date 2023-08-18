@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FacultyMeets.ShowAvailabilityPage"
              Title="ShowAvailabilityPage">
-    <ListView x:Name="AvailabilityListView" Margin="20" >
+    <ListView x:Name="AvailabilityListView" Margin="20" ItemSelected="OnAvailabilitySelected" SelectionMode="Single">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>

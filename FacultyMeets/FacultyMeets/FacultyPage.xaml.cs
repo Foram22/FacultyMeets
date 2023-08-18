@@ -59,4 +59,12 @@ public partial class FacultyPage : ContentView
         FacultyListView.ItemsSource = null;
         FacultyListView.ItemsSource = filteredFaculties;
     }
+
+    async void OnFacultySelected(object sender, SelectedItemChangedEventArgs e)
+    {
+        if (e.SelectedItem is Faculty selectedFaculty)
+        {
+            await Navigation.PushAsync(new ShowAvailabilityPage(selectedFaculty.Id));
+        }
+    }
 }
